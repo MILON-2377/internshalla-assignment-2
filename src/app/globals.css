@@ -1,15 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "CHEESEBURGA";
-  src: url("/fonts/CHEESEBURGA.woff2") format("woff2"),
-    url("/fonts/CHEESEBURGA.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+
+.page-scroll-bar::-webkit-scrollbar {
+    display: none;
 }
 
-body {
-  font-family: "CHEESEBURGA", sans-serif;
+
+/* thin scroll bar */
+.scroll-bar::-webkit-scrollbar {
+   width: 5px;
+   border-radius: 10px;
+}
+
+/* track */
+.scroll-bar::-webkit-scrollbar-track {
+    background: white;
+    border-top-right-radius: 20px;
+}
+
+/* handle */
+.scroll-bar::-webkit-scrollbar-thumb {
+    background: #8a8989;
+    border-radius: 4px;
+    height: 40px;
+}
+
+/* handle on hover */
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
