@@ -1,5 +1,6 @@
 "use client";
 
+import HistoryMain from "@/components/HistoryCompo/HistoryMain";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
@@ -40,11 +41,11 @@ export default function Home() {
     >
       <div
         ref={expandRef}
-        className={`scroll-bar absolute w-[93.5vw] h-[95vh] rounded-t-xl rounded-r-none bg-green-200 overflow-y-scroll transition-all duration-300 ${
+        className={`scroll-bar absolute w-[93.5vw] h-[95vh] rounded-t-xl rounded-r-none  overflow-y-scroll transition-all duration-300 ${
           isFixed ? "fixed top-[64px]" : "top-[90vh]"
         }`}
       >
-        <div className =" h-[2000px] w-full bg-yellow-300 "></div>
+        <HistoryMain />
       </div>
     </div>
   );
