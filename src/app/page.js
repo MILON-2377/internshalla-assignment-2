@@ -1,5 +1,6 @@
 "use client";
 
+import GalleryMain from "@/components/Gallery/GalleryMain";
 import HistoryMain from "@/components/HistoryCompo/HistoryMain";
 import { useEffect, useRef, useState } from "react";
 
@@ -37,15 +38,20 @@ export default function Home() {
         overflowY: "scroll",
         height: "100vh", 
       }}
-      className=" page-scroll-bar relative w-screen p-10 bg-no-repeat bg-cover bg-center"
+      className=" page-scroll-bar relative w-screen bg-no-repeat bg-cover bg-center"
     >
       <div
         ref={expandRef}
-        className={`scroll-bar absolute w-[93.5vw] h-[95vh] rounded-t-xl rounded-r-none  overflow-y-scroll transition-all duration-300 ${
+        className={`scroll-bar absolute bg-white ml-4 sm:ml-6 lg:ml-12 w-[93.5vw] h-[95vh] rounded-t-xl rounded-r-none  overflow-y-scroll transition-all duration-300 ${
           isFixed ? "fixed top-[64px]" : "top-[90vh]"
         }`}
       >
         <HistoryMain />
+
+        {/* gallery section */}
+        <GalleryMain />
+
+        <div className="w-full h-[200vh] "></div>
       </div>
     </div>
   );

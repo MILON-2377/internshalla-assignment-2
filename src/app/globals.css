@@ -4,32 +4,36 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .page-scroll-bar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-
 
 /* thin scroll bar */
 .scroll-bar::-webkit-scrollbar {
-   width: 5px;
-   border-radius: 10px;
+  width: 5px;
+  border-radius: 10px;
 }
 
 /* track */
 .scroll-bar::-webkit-scrollbar-track {
-    background: white;
-    border-top-right-radius: 20px;
+  background: white;
+  border-top-right-radius: 20px;
 }
 
 /* handle */
 .scroll-bar::-webkit-scrollbar-thumb {
-    background: #8a8989;
-    border-radius: 4px;
-    height: 40px;
+  background: #8a8989;
+  border-radius: 4px;
+  height: 40px;
 }
 
 /* handle on hover */
 .scroll-bar::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
+}
+
+
+/* gallery scrolling bar hidden */
+.gallery::-webkit-scrollbar {
+  display: none;
 }
