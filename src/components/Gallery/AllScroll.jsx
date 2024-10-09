@@ -1,22 +1,15 @@
 "use client";
-import { useRef, useEffect, useState } from "react";
+import { useRef,} from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
-import img1 from "../../../public/HomeImg/DALL·E 2024-07-14 21.37.17 - A 3D cartoon illustration of a very happy furry Central Asian Shepherd dog in explorer attire, standing at a crossroads and holding a map with a yello 2.png";
-import img2 from "../../../public/HomeImg/DALL·E 2024-07-14 21.37.17 - A 3D cartoon illustration of a very happy furry Central Asian Shepherd dog in explorer attire, standing at a crossroads and holding a map with a yello 2.png";
-import img3 from "../../../public/HomeImg/DALL·E 2024-07-15 01.28.43 - A full body 3D cute cartoon illustration of a very happy furry Central Asian Shepherd dog dressed as a construction worker. The dog should have a big_ 3.png";
+import img1 from "../../../public/HomeImg/roadmap.png";
+import img2 from "../../../public/HomeImg/DALL·E 2024-07-15 01.32.53 - A full-body 3D cute cartoon illustration of a very happy furry Central Asian Shepherd dog celebrating with a trophy. The dog should have a big smile a 1.png";
+import img3 from "../../../public/HomeImg/DALL·E 2024-07-15 01.33.29 - A full-body 3D cute cartoon illustration of a very happy furry Central Asian Shepherd dog dressed in a Viking outfit. The dog should have a big smile_ 1.png";
 
 import Image from "next/image";
 
 export default function ScrollItems({ section }) {
-  const [activeScrollItem, setActiveScrollItem] = useState(scrollItems);
   const containerRef = useRef(null);
-
-  useEffect(() => {
-    if (section === "all") setActiveScrollItem(scrollItems);
-    if (section === "photos") setActiveScrollItem(photos);
-    if (section === "videos") setActiveScrollItem(videos);
-  }, [section]);
 
   const handleNext = () => {
     const container = containerRef.current;
