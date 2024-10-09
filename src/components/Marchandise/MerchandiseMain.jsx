@@ -8,6 +8,36 @@ import pTshirt from "../../../public/Alabay Merch/pink tshirt.png";
 import yTshirt from "../../../public/Alabay Merch/yellow tshirt.png";
 import bHoddie from "../../../public/Alabay Merch/black hoodie.png";
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
+
+import capB from "../../../public/Alabay Merch/blue cap bck.png";
+import pShirtB from "../../../public/Alabay Merch/pink tee bck.png";
+import yShirtB from "../../../public/Alabay Merch/yellow tee bck.png";
+import bHoodieB from "../../../public/Alabay Merch/black hoodie bck.png";
+
+const merchandisesBg = [
+  {
+    title: "Item 1",
+    img: capBg,
+    bgImg:capB,
+  },
+  {
+    title: "Item 2",
+    img: pTshirt,
+    bgImg: pShirtB,
+  },
+  {
+    title: "Item 3",
+    img: yTshirt,
+    bgImg: yShirtB,
+  },
+  {
+    title: "Item 4",
+    img: bHoddie,
+    bgImg: bHoodieB,
+  },
+];
 
 export default function MerchandiseMain() {
   const sliderRef = useRef(null);
@@ -16,7 +46,7 @@ export default function MerchandiseMain() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 400,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -29,18 +59,19 @@ export default function MerchandiseMain() {
     <div
       style={{
         backgroundImage: `url('${merchandises[currentIndex].bgImg}')`,
+        backgroundSize: "cover",
+        backgroundPosition: "50% calc(100% -10px)",
       }}
-      className="relative bg-center bg-no-repeat bg-cover py-8 mt-32 border "
+      className="relative border-4 w-full mx-auto bg-no-repeat bg-cover bg-center   mt-32 "
     >
       <Slider ref={sliderRef} {...settings}>
         {merchandises.map((item, idx) => (
-          <div key={idx + item.title} className=" relative  w-full h-[40vh] ">
-            <Image
-              src={item.img}
-              alt={item.title}
-              className=" w-full h-full object-contain "
-            />
-          </div>
+          <Image
+            key={idx + item.title}
+            src={item.img}
+            alt={item.title}
+            className=" w-full h-[50vh] object-contain "
+          />
         ))}
       </Slider>
 
@@ -49,13 +80,13 @@ export default function MerchandiseMain() {
         className="absolute left-4 top-[40%] z-10 bg-white border rounded-full p-2"
         onClick={() => sliderRef.current.slickPrev()}
       >
-        Prev
+        <FaArrowLeft className="font-thin" />
       </button>
       <button
         className="absolute right-4 top-[40%] z-10 bg-white border rounded-full p-2"
         onClick={() => sliderRef.current.slickNext()}
       >
-        Next
+        <FaArrowRight className=" font-thin " />
       </button>
     </div>
   );

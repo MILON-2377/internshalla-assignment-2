@@ -1,6 +1,7 @@
 "use client";
 
 import GalleryMain from "@/components/Gallery/GalleryMain";
+import Games from "@/components/Games/Games";
 import HistoryMain from "@/components/HistoryCompo/HistoryMain";
 import MerchandiseMain from "@/components/Marchandise/MerchandiseMain";
 import DisplayingImg from "@/components/ProjectVision/DisplayingImg";
@@ -45,7 +46,7 @@ export default function Home() {
     >
       <div
         ref={expandRef}
-        className={`scroll-bar absolute bg-white ml-4 sm:ml-6 lg:ml-12 w-[93.5vw] h-[95vh] rounded-t-xl rounded-r-none  overflow-y-scroll transition-all duration-300 ${
+        className={`scroll-bar absolute bg-white ml-4 sm:ml-[5%] lg:ml-[15%] w-[93.5vw] sm:w-[90vw] lg:w-[70vw] h-[95vh] rounded-t-xl rounded-r-none  overflow-y-scroll transition-all duration-300 ${
           isFixed ? "fixed top-[64px]" : "top-[90vh]"
         }`}
       >
@@ -88,6 +89,9 @@ export default function Home() {
 
         {/* merchandise section */}
         <MerchandiseMain />
+
+        {/* games */}
+        <Games />
 
         <div className="w-full h-[200vh] "></div>
       </div>
