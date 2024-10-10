@@ -30,7 +30,7 @@ export default function ComunityAndFeature() {
         <p className=" text-xs sm:text-sm font-bold text-white text-center p-2 sm:p-4 ">
           Expansion and New Features
         </p>
-        <Image src={img4} alt="img 1" className=" mt-2 sm:mt-5 w-[80vw] object-cover " />
+        <Image src={img4} alt="img 1" className=" mt-2 sm:mt-5 lg:mt-0 w-[80vw] object-cover " />
       </div>
     </div>
   );

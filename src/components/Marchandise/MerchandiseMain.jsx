@@ -11,31 +11,27 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 
-import capB from "../../../public/Alabay Merch/blue cap bck.png";
-import pShirtB from "../../../public/Alabay Merch/pink tee bck.png";
-import yShirtB from "../../../public/Alabay Merch/yellow tee bck.png";
-import bHoodieB from "../../../public/Alabay Merch/black hoodie bck.png";
-
-const merchandisesBg = [
+// Merchandise items
+const merchandises = [
   {
     title: "Item 1",
     img: capBg,
-    bgImg:capB,
+    bgImg: "/blue cap bck.png",
   },
   {
     title: "Item 2",
     img: pTshirt,
-    bgImg: pShirtB,
+    bgImg: "/pink tee bck.png",
   },
   {
     title: "Item 3",
     img: yTshirt,
-    bgImg: yShirtB,
+    bgImg: "/yellow tee bck.png",
   },
   {
     title: "Item 4",
     img: bHoddie,
-    bgImg: bHoodieB,
+    bgImg: "/black hoodie bck.png",
   },
 ];
 
@@ -62,7 +58,7 @@ export default function MerchandiseMain() {
         backgroundSize: "cover",
         backgroundPosition: "50% calc(100% -10px)",
       }}
-      className="relative border-4 w-full mx-auto bg-no-repeat bg-cover bg-center   mt-32 "
+      className="relative z-50 w-[80vw] lg:h-[50vh] lg:w-[60vw] lg:py-10 rounded-lg sm:py-4 mx-auto bg-no-repeat sm:bg-contain bg-center mt-16 "
     >
       <Slider ref={sliderRef} {...settings}>
         {merchandises.map((item, idx) => (
@@ -70,7 +66,7 @@ export default function MerchandiseMain() {
             key={idx + item.title}
             src={item.img}
             alt={item.title}
-            className=" w-full h-[50vh] object-contain "
+            className=" w-full h-[30vh] sm:h-[50vh] lg:h-[40vh] lg:object-contain object-cover "
           />
         ))}
       </Slider>
@@ -92,26 +88,4 @@ export default function MerchandiseMain() {
   );
 }
 
-// Merchandise items
-const merchandises = [
-  {
-    title: "Item 1",
-    img: capBg,
-    bgImg: "/blue cap bck.png",
-  },
-  {
-    title: "Item 2",
-    img: pTshirt,
-    bgImg: "/pink tee bck.png",
-  },
-  {
-    title: "Item 3",
-    img: yTshirt,
-    bgImg: "/yellow tee bck.png",
-  },
-  {
-    title: "Item 4",
-    img: bHoddie,
-    bgImg: "/black hoodie bck.png",
-  },
-];
+

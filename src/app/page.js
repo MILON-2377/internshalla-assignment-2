@@ -2,11 +2,14 @@
 
 import ComunityAndFeature from "@/components/ComunityAndFeature/ComunityAndFeature";
 import GalleryMain from "@/components/Gallery/GalleryMain";
+import GameReview from "@/components/GameReview";
 import Games from "@/components/Games/Games";
 import HistoryMain from "@/components/HistoryCompo/HistoryMain";
 import MerchandiseMain from "@/components/Marchandise/MerchandiseMain";
 import DisplayingImg from "@/components/ProjectVision/DisplayingImg";
 import RoadMapImg from "@/components/RoadMap/RoadMapImg";
+import SocialMediaLink from "@/components/SocialMediaLink";
+import Token from "@/components/Token/Token";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
@@ -105,13 +108,31 @@ export default function Home() {
         {/* comunity and features section */}
         <ComunityAndFeature />
 
+        {/* token section */}
+        <Token />
+
+        <p className=" lg:text-[50px] sm:-mt-10 sm:text-[40px] text-[#FFA800] text-center font-bungee font-bold ">
+          MERCHANDISE
+        </p>
+
         {/* merchandise section */}
         <MerchandiseMain />
-
         {/* games */}
         <Games />
 
-        <div className="w-full h-[200vh] "></div>
+        {/* game review section */}
+        <p className=" ml-5 lg:ml-20 mt-16">
+          <span className=" font-bold text-xl text-[#FFA800] ">GAME</span>
+          <span className=" text-xl font-bold ml-2 ">
+            REVIEWS
+          </span>
+        </p>
+
+        <GameReview />
+
+        {/* social media links */}
+        <SocialMediaLink />
+
       </div>
     </div>
   );
