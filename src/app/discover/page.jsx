@@ -31,12 +31,12 @@ export default function Discover() {
       }}
       className="relative bg-center bg-fixed bg-cover bg-no-repeat w-[100vw] h-[110vh] "
     >
-      <section className="sticky top-0">
+      <section className="sticky top-0"> 
         <h1 className="text-white font-bold flex flex-col gap-2 ml-5 lg:ml-10 py-10">
-          <span className="text-5xl lg:text-5xl">ALABAY HERITAGE</span>
-          <span className="text-2xl text-[#90FFAE]">THE LOST ADVENTURE</span>
+          <span className=" text-3xl sm:text-5xl lg:text-5xl">ALABAY HERITAGE</span>
+          <span className=" text-xl sm:text-2xl text-[#90FFAE]">THE LOST ADVENTURE</span>
         </h1>
-        <p className="px-5 lg:px-10 text-xl font-bold text-white w-[50vw]">
+        <p className="px-5 -mt-5 sm:-mt-0 lg:px-10 text-xs sm:text-xl font-bold text-white w-[50vw]">
           Take on the role of the legendary Alabay on a quest to uncover the
           ancient secrets of its ancestors.
         </p>

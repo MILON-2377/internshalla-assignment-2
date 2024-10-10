@@ -4,7 +4,7 @@ import { IoPlay } from "react-icons/io5";
 
 export default function ScrollBar({ isScroll }) {
   return (
-    <div className=" absolute sm:right-10  sm:top-[30vh] flex flex-col items-center justify-center gap-1 ">
+    <div className=" absolute right-5 sm:right-10  sm:top-[30vh] flex flex-col items-center justify-center gap-1 ">
       <button
         className={`${
           isScroll ? " bg-gray-500 " : " bg-[#90FFAE] "
@@ -12,11 +12,11 @@ export default function ScrollBar({ isScroll }) {
       >
         <IoPlay className=" text-sm transform -rotate-90 text-white " />
       </button>
-      <div className=" w-3 sm:h-[20vh] lg:h-[25vh] bg-gray-400 rounded-t-xl rounded-b-xl flex justify-center ">
+      <div className=" w-3 h-[13vh] sm:h-[20vh] lg:h-[20vh] bg-gray-400 rounded-t-xl rounded-b-xl flex justify-center ">
         <div
           className={` ${
-            isScroll ? " transform translate-y-[86%] " : ""
-          } h-20 w-3 rounded-t-xl rounded-b-xl bg-green-300 `}
+            isScroll ? " transform translate-y-[88%] sm:translate-y-[86%] " : ""
+          } h-16 sm:h-20 w-3 rounded-t-xl rounded-b-xl bg-green-300 `}
         ></div>
       </div>
       <button

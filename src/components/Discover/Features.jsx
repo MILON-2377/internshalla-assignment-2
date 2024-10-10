@@ -5,7 +5,7 @@ import { IoIosPlayCircle } from "react-icons/io";
 
 export default function Features() {
   return (
-    <div className=" absolute top-[50vh] left-5 ">
+    <div className=" absolute top-[50vh] left-5 lg:left-10 overflow-scroll lg:overflow-auto sm:overflow-hidden scroll-smooth ">
       <h1 className=" text-3xl font-bold text-[#90FFAE] ">FEATURES</h1>
       <p className=" text-white w-[80vw] mt-5 ">
         Explore a variety of landscapes, including mountains, forests, deserts,
