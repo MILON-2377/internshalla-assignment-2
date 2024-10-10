@@ -10,7 +10,7 @@ export default function GalleryMain() {
   };
 
   return (
-    <div className=" -mt-12 sm:-mt-16 lg:-mt-40 ">
+    <div className=" relative -mt-12 z-50 sm:-mt-16 lg:-mt-40 ">
       {/* gallery nav */}
       <section className=" w-[60%] sm:w-[30%]  mx-auto flex items-center justify-between mt-5 sm:mt-0 ">
         <button

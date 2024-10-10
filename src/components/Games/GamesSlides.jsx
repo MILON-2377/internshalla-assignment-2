@@ -9,6 +9,7 @@ import gamImg3 from "../../../public/games/Alabay heritage prev gradient.png";
 import gamImg4 from "../../../public/games/alabay lost heritage prev 1.png";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 // games images
 const gameImages = [
@@ -63,10 +64,10 @@ export default function GamesSlides() {
       </button>
 
       {/* navigation btn */}
-      <button className="absolute flex font-bold text-white items-center justify-evenly right-[40%] top-[80%] z-10 w-[20vw] bg-[#843AFC] rounded-3xl p-2">
+      <Link href="/discover" className="absolute flex font-bold text-white items-center justify-evenly right-[40%] top-[80%] z-10 w-[20vw] bg-[#843AFC] rounded-3xl p-2">
         Discover
         <FaArrowRight className=" font-thin text-white text-2xl " />
-      </button>
+      </Link>
     </div>
   );
 }
