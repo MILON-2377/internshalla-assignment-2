@@ -4,10 +4,11 @@ import Image from 'next/image';
 
 export default function ThreeDImg() {
   return (
-    <div className="absolute z-20 w-[62%] top-[6%] sm:w-[65%] sm:top-[7%] lg:w-[55%] lg:top-[10%]  ">
-      <Image src={dogImg} alt="3d dog image"
-       className=" object-cover"
-      />
+    <div className="absolute h-[100vh] lg:h-[90vh] top-[8vh] sm:top-[15vh] lg:top-[15.3vh] overflow-hidden">
+      <Image src={dogImg} alt="dog group" className=" relative w-[58vw] lg:w-[42vw] z-50 object-cover " />
+      <Image src={dogImg} alt="dog group"
+      style={{transform: "rotateX(180deg)", opacity:"0.1"}}
+      className=" absolute w-[58vw] lg:w-[42vw] top-[19.5vh] sm:top-[43vh] lg:top-[62.6vh] object-cover" />
     </div>
   )
 }

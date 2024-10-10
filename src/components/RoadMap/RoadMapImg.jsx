@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function RoadMapImg() {
   return (
-    <div className="absolute h-[35vh] sm:h-[70vh] lg:h-[140vh] top-[68%] lg:top-[67.5%] right-0 overflow-hidden p-5 ">
+    <div className="absolute h-[35vh] sm:h-[70vh] lg:h-[104vh] top-[68%] lg:top-[65.5%] -right-4 sm:right-0 overflow-hidden p-5 ">
       <Image
         src={roadMapImg}
         alt="roadmap dog img"
-        className=" relative z-50 w-[55vw] sm:w-[48vw] -top-[1vh] sm:-top-[3.7vh] lg:-top-[5vh]  object-cover "
+        className=" relative z-50 w-[55vw] lg:w-[36vw] sm:w-[48vw] -top-[1vh] sm:-top-[3.7vh] lg:-top-[5vh]  object-cover "
       />
       <Image
         src={roadMapImg}

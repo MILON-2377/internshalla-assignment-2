@@ -10,24 +10,24 @@ export default function GalleryMain() {
   };
 
   return (
-    <div className="mt-10">
+    <div className=" -mt-12 sm:-mt-16 lg:-mt-40 ">
       {/* gallery nav */}
-      <section className=" w-[50%] sm:w-[30%] lg:w-[25%] mx-auto flex items-center justify-between ">
+      <section className=" w-[60%] sm:w-[30%]  mx-auto flex items-center justify-between mt-5 sm:mt-0 ">
         <button
           onClick={() => scrollToSection("all")}
-          className={`lg:text-[32px] font-[900] text-[#353535] `}
+          className={`lg:text-[32px] text-xl font-[900] text-[#353535] `}
         >
           All
         </button>
         <button
           onClick={() => scrollToSection("photos")}
-          className="lg:text-[32px] font-[900] text-[#FFA800] "
+          className="lg:text-[32px] text-xl font-[900] text-[#FFA800] "
         >
           Photos
         </button>
         <button
           onClick={() => scrollToSection("videos")}
-          className={`lg:text-[32px] font-[900] text-[#353535] `}
+          className={`lg:text-[32px] text-xl font-[900] text-[#353535] `}
         >
           Vidoes
         </button>

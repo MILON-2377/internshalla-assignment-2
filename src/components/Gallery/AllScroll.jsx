@@ -24,7 +24,7 @@ export default function ScrollItems({ section }) {
   };
 
   return (
-    <div className="relative mt-5 ">
+    <div className="relative mt-5 z-50 ">
       {/* Scrolling items */}
       <div
         ref={containerRef}
